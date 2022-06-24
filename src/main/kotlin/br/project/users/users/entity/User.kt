@@ -28,11 +28,13 @@ data class User(
         @Column(name = "ds_email")
         val email : String,
 
-        @Column(name = "ds_senha")
-        val password : String? = null,
-
         @Column(name = "fl_ativo")
-        var isActive : String
+        var active : String,
+
+        @Column(name = "ds_senha")
+        val password : String? = null
+
+
 
 ){
         fun toGetAll() : User{
@@ -41,7 +43,7 @@ data class User(
                         age = this.age,
                         phone = this.phone,
                         email = this.email,
-                        isActive = this.isActive
+                        active = this.active
                 )
         }
 }

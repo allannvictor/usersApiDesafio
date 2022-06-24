@@ -22,5 +22,5 @@ class UserCustomDetails(
 
     override fun isCredentialsNonExpired(): Boolean = true
 
-    override fun isEnabled(): Boolean = user.isActive == "S"
+    override fun isEnabled(): Boolean = user.active == "S"
 }

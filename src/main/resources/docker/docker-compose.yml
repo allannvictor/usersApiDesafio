@@ -14,6 +14,11 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
+  redis:
+    image: redis
+    container_name: redis-compose
+    ports:
+      - 6379:6379
   mongodb:
     image: mongo:latest # use the latest image.
     container_name: mongodb

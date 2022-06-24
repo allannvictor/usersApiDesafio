@@ -25,7 +25,7 @@ data class PostUserRequest(
                         phone = this.phone,
                         email = this.email,
                         password = this.password,
-                        isActive = "S"
+                        active = "S"
                 )
         }
 }

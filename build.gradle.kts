@@ -37,6 +37,10 @@ dependencies {
 	//JWT
 	implementation("io.jsonwebtoken:jjwt:0.9.1")
 
+	//Redis
+	implementation("org.springframework.boot:spring-boot-starter-cache")
+	implementation("org.springframework.boot:spring-boot-starter-data-redis")
+
 
 
 	runtimeOnly("org.postgresql:postgresql")
